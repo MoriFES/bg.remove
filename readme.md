@@ -122,3 +122,57 @@ If you have any questions or suggestions, feel free to reach out:
 - **Email**: morifesteam@example.com
 
 Thank you for checking out **bg.remove**! We hope you find it useful. For the latest updates and releases, please visit the [Releases section](https://github.com/MoriFES/bg.remove/releases). Happy coding! 🎉
+
+---
+
+## New Modern UI (2025 Refresh)
+
+The application now includes a redesigned interface with:
+
+- Sleek responsive layout (desktop & mobile)
+- Drag & drop uploading with progress animation
+- Side‑by‑side original vs transparent preview
+- Animated skeleton placeholder while processing
+- One‑click dark / light theme toggle (persists via `localStorage`)
+- Accessible keyboard navigation (press Enter/Space on the drop zone)
+
+### Theme Customization
+
+Themes are powered by CSS custom properties defined in `static/css/style.css` under the `:root` selector and the `html[data-theme='light']` override. To adjust branding:
+
+1. Edit the `--accent` and `--accent-accent` variables.
+2. Optionally add a `html[data-theme='solarized'] { ... }` block and toggle it via a custom control.
+
+### File Size & Limits
+
+The backend restricts uploads to 16MB (`app.config['MAX_CONTENT_LENGTH']`). You can raise this in `app.py` if needed.
+
+### Clearing Temporary Files
+
+Temporary originals and processed outputs are stored in `uploads/` and `processed/`. A placeholder "Clear Temp Files" button exists; you can implement a secure route to remove old files (ensure you **never** allow arbitrary path deletion).
+
+Example route (add to `app.py` if desired):
+
+```python
+@app.post('/admin/clear-cache')
+def clear_cache():
+   for folder in [app.config['UPLOAD_FOLDER'], app.config['PROCESSED_FOLDER']]:
+      for name in os.listdir(folder):
+         path = os.path.join(folder, name)
+         if os.path.isfile(path):
+            try: os.remove(path)
+            except OSError: pass
+   return jsonify({'status': 'ok'})
+```
+
+> Secure this endpoint (API key / auth) before exposing publicly.
+
+### Roadmap Ideas
+
+- Batch processing / queue
+- Transparent background color replacement (e.g., pick white or custom color)
+- Cropping / smart subject centering
+- Download as ZIP for batches
+- Progressive enhancement for offline mode
+
+Feel free to open issues or PRs with suggestions!
