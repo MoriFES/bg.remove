@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, render_template
 from werkzeug.utils import secure_filename
 from rembg import remove
 from PIL import Image
@@ -16,7 +16,8 @@ for folder in [app.config['UPLOAD_FOLDER'], app.config['PROCESSED_FOLDER']]:
 
 @app.route('/')
 def index():
-    return app.send_static_file('index.html')
+    """Render the enhanced UI template."""
+    return render_template('index.html')
 
 @app.route('/remove-bg', methods=['POST'])
 def remove_background():
