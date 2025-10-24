@@ -22,7 +22,7 @@ def index():
 def remove_background():
     if 'image' not in request.files:
         return jsonify({'error': 'No image uploaded'}), 400
-    
+
     file = request.files['image']
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
@@ -30,18 +30,26 @@ def remove_background():
     if not file.filename.lower().endswith(('.png', '.jpg', '.jpeg', '.webp')):
         return jsonify({'error': 'Invalid file format'}), 400
 
+    bg_color = request.form.get('bg_color', '').strip()  # optional color input
+
     try:
-        # Read and process the image
-        input_image = Image.open(file.stream)
-        
+        # Open image
+        input_image = Image.open(file.stream).convert("RGBA")
+
         # Remove background
         output_image = remove(input_image)
-        
+
+        # If background color is provided, fill it in
+        if bg_color:
+            # Create new background with the given color
+            bg = Image.new("RGBA", output_image.size, bg_color)
+            output_image = Image.alpha_composite(bg, output_image)
+
         # Save to BytesIO object
         img_io = BytesIO()
-        output_image.save(img_io, 'PNG')
+        output_image.save(img_io, 'PNG', optimize=True)
         img_io.seek(0)
-        
+
         return send_file(
             img_io,
             mimetype='image/png',
@@ -51,6 +59,7 @@ def remove_background():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True)
